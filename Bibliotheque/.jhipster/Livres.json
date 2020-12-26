@@ -1,0 +1,52 @@
+{
+  "name": "Livres",
+  "fields": [
+    {
+      "fieldName": "nomLivre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "genre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombredepages",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "langues",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prix",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "auteurs",
+      "otherEntityRelationshipName": "livre",
+      "relationshipName": "auteurs",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "bibliotheque",
+      "otherEntityRelationshipName": "livre",
+      "relationshipName": "nomBiblio"
+    }
+  ],
+  "changelogDate": "20201223120651",
+  "entityTableName": "livres",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

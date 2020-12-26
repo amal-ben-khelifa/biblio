@@ -1,0 +1,56 @@
+
+entity Bibliotheque {
+	NomBiblio String
+    Adresse String 
+}
+
+entity Livres {
+	NomLivre String
+    Genre String 
+    Nombredepages String 
+    Langues String 
+    Prix String
+}
+
+
+entity JeuxEducatif {
+	Nom String,
+	Prix String,
+	
+}
+
+
+entity Auteurs {
+	
+	Nom String,
+	Prenom String,
+	Datedenaissance Instant,
+	
+}
+
+
+relationship OneToMany  {
+Livres {NomBiblio} to Bibliotheque {Livre}
+}
+relationship OneToMany {
+JeuxEducatif {NomBiblio} to Bibliotheque{JeuxEducatif}
+}
+relationship OneToOne {
+Livres {auteurs} to Auteurs {livre}
+}
+service all with serviceClass 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

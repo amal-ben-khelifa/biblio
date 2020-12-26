@@ -1,0 +1,25 @@
+{
+  "bibliothequeApp": {
+    "auteurs": {
+      "home": {
+        "title": "Auteurs",
+        "createLabel": "Créer un nouveau Auteurs",
+        "createOrEditLabel": "Créer ou éditer un Auteurs",
+        "notFound": "Aucun Auteurs trouvé"
+      },
+      "created": "Un nouveau Auteurs a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Auteurs avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Auteurs avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Auteurs {{ id }} ?"
+      },
+      "detail": {
+        "title": "Auteurs"
+      },
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "datedenaissance": "Datedenaissance",
+      "livre": "Livre"
+    }
+  }
+}

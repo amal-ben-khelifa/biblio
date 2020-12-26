@@ -1,0 +1,32 @@
+{
+  "name": "JeuxEducatif",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prix",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "bibliotheque",
+      "otherEntityRelationshipName": "jeuxEducatif",
+      "relationshipName": "nomBiblio"
+    }
+  ],
+  "changelogDate": "20201223150244",
+  "entityTableName": "jeux_educatif",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

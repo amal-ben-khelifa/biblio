@@ -1,0 +1,37 @@
+{
+  "name": "Auteurs",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "datedenaissance",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "livres",
+      "otherEntityRelationshipName": "auteurs",
+      "relationshipName": "livre",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20201223120851",
+  "entityTableName": "auteurs",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

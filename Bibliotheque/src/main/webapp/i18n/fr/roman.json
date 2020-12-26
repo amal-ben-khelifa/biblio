@@ -1,0 +1,25 @@
+{
+  "bibliothequeApp": {
+    "roman": {
+      "home": {
+        "title": "Romen",
+        "createLabel": "Créer un nouveau Roman",
+        "createOrEditLabel": "Créer ou éditer un Roman",
+        "notFound": "Aucun Roman trouvé"
+      },
+      "created": "Un nouveau Roman a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Roman avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Roman avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Roman {{ id }} ?"
+      },
+      "detail": {
+        "title": "Roman"
+      },
+      "streetAddress": "Street Address",
+      "postalCode": "Postal Code",
+      "city": "City",
+      "stateProvince": "State Province"
+    }
+  }
+}

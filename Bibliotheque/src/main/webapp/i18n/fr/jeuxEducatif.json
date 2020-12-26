@@ -1,0 +1,24 @@
+{
+  "bibliothequeApp": {
+    "jeuxEducatif": {
+      "home": {
+        "title": "JeuxEducatifs",
+        "createLabel": "Créer un nouveau Jeux Educatif",
+        "createOrEditLabel": "Créer ou éditer un Jeux Educatif",
+        "notFound": "Aucun Jeux Educatif trouvé"
+      },
+      "created": "Un nouveau Jeux Educatif a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Jeux Educatif avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Jeux Educatif avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Jeux Educatif {{ id }} ?"
+      },
+      "detail": {
+        "title": "Jeux Educatif"
+      },
+      "nom": "Nom",
+      "prix": "Prix",
+      "nomBiblio": "Nom Biblio"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "bibliothequeApp": {
+    "livres": {
+      "home": {
+        "title": "Livres",
+        "createLabel": "Créer un nouveau Livres",
+        "createOrEditLabel": "Créer ou éditer un Livres",
+        "notFound": "Aucun Livres trouvé"
+      },
+      "created": "Un nouveau Livres a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Livres avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Livres avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Livres {{ id }} ?"
+      },
+      "detail": {
+        "title": "Livres"
+      },
+      "nomLivre": "Nom Livre",
+      "genre": "Genre",
+      "nombredepages": "Nombredepages",
+      "langues": "Langues",
+      "prix": "Prix",
+      "auteurs": "Auteurs",
+      "nomBiblio": "Nom Biblio"
+    }
+  }
+}

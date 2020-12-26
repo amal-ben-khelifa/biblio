@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="auteurs">
+            <h2><span jhiTranslate="bibliothequeApp.auteurs.detail.title">Auteurs</span> {{ auteurs.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="bibliothequeApp.auteurs.nom">Nom</span></dt>
+                <dd>
+                    <span>{{ auteurs.nom }}</span>
+                </dd>
+                <dt><span jhiTranslate="bibliothequeApp.auteurs.prenom">Prenom</span></dt>
+                <dd>
+                    <span>{{ auteurs.prenom }}</span>
+                </dd>
+                <dt><span jhiTranslate="bibliothequeApp.auteurs.datedenaissance">Datedenaissance</span></dt>
+                <dd>
+                    <span>{{ auteurs.datedenaissance }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/auteurs', auteurs.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+{
+  "name": "Bibliotheque",
+  "fields": [
+    {
+      "fieldName": "nomBiblio",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "livres",
+      "otherEntityRelationshipName": "nomBiblio",
+      "relationshipName": "livre",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "jeuxEducatif",
+      "otherEntityRelationshipName": "nomBiblio",
+      "relationshipName": "jeuxEducatif",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201223120551",
+  "entityTableName": "bibliotheque",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

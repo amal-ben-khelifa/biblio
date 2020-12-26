@@ -1,0 +1,24 @@
+{
+  "bibliothequeApp": {
+    "jeuxEducatif": {
+      "home": {
+        "title": "Jeux Educatifs",
+        "createLabel": "Create a new Jeux Educatif",
+        "createOrEditLabel": "Create or edit a Jeux Educatif",
+        "notFound": "No Jeux Educatifs found"
+      },
+      "created": "A new Jeux Educatif is created with identifier {{ param }}",
+      "updated": "A Jeux Educatif is updated with identifier {{ param }}",
+      "deleted": "A Jeux Educatif is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Jeux Educatif {{ id }}?"
+      },
+      "detail": {
+        "title": "Jeux Educatif"
+      },
+      "nom": "Nom",
+      "prix": "Prix",
+      "nomBiblio": "Nom Biblio"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "bibliothequeApp": {
+    "bibliotheque": {
+      "home": {
+        "title": "Bibliotheques",
+        "createLabel": "Create a new Bibliotheque",
+        "createOrEditLabel": "Create or edit a Bibliotheque",
+        "notFound": "No Bibliotheques found"
+      },
+      "created": "A new Bibliotheque is created with identifier {{ param }}",
+      "updated": "A Bibliotheque is updated with identifier {{ param }}",
+      "deleted": "A Bibliotheque is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bibliotheque {{ id }}?"
+      },
+      "detail": {
+        "title": "Bibliotheque"
+      },
+      "nomBiblio": "Nom Biblio",
+      "adresse": "Adresse",
+      "livre": "Livre",
+      "jeuxEducatif": "Jeux Educatif"
+    }
+  }
+}

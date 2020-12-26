@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="roman">
+            <h2><span jhiTranslate="bibliothequeApp.roman.detail.title">Roman</span> {{ roman.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="bibliothequeApp.roman.streetAddress">Street Address</span></dt>
+                <dd>
+                    <span>{{ roman.streetAddress }}</span>
+                </dd>
+                <dt><span jhiTranslate="bibliothequeApp.roman.postalCode">Postal Code</span></dt>
+                <dd>
+                    <span>{{ roman.postalCode }}</span>
+                </dd>
+                <dt><span jhiTranslate="bibliothequeApp.roman.city">City</span></dt>
+                <dd>
+                    <span>{{ roman.city }}</span>
+                </dd>
+                <dt><span jhiTranslate="bibliothequeApp.roman.stateProvince">State Province</span></dt>
+                <dd>
+                    <span>{{ roman.stateProvince }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/roman', roman.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

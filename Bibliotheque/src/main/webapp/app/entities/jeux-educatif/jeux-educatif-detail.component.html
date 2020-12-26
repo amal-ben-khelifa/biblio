@@ -1,0 +1,34 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="jeuxEducatif">
+            <h2><span jhiTranslate="bibliothequeApp.jeuxEducatif.detail.title">Jeux Educatif</span> {{ jeuxEducatif.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="bibliothequeApp.jeuxEducatif.nom">Nom</span></dt>
+                <dd>
+                    <span>{{ jeuxEducatif.nom }}</span>
+                </dd>
+                <dt><span jhiTranslate="bibliothequeApp.jeuxEducatif.prix">Prix</span></dt>
+                <dd>
+                    <span>{{ jeuxEducatif.prix }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/jeux-educatif', jeuxEducatif.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

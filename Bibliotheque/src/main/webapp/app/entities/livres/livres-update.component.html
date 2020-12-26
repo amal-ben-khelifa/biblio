@@ -1,0 +1,64 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-livres-heading" jhiTranslate="bibliothequeApp.livres.home.createOrEditLabel">Create or edit a Livres</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="bibliothequeApp.livres.nomLivre" for="field_nomLivre">Nom Livre</label>
+                    <input type="text" class="form-control" name="nomLivre" id="field_nomLivre"
+                           formControlName="nomLivre"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="bibliothequeApp.livres.genre" for="field_genre">Genre</label>
+                    <input type="text" class="form-control" name="genre" id="field_genre"
+                           formControlName="genre"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="bibliothequeApp.livres.nombredepages" for="field_nombredepages">Nombredepages</label>
+                    <input type="text" class="form-control" name="nombredepages" id="field_nombredepages"
+                           formControlName="nombredepages"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="bibliothequeApp.livres.langues" for="field_langues">Langues</label>
+                    <input type="text" class="form-control" name="langues" id="field_langues"
+                           formControlName="langues"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="bibliothequeApp.livres.prix" for="field_prix">Prix</label>
+                    <input type="text" class="form-control" name="prix" id="field_prix"
+                           formControlName="prix"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="bibliothequeApp.livres.auteurs" for="field_auteurs">Auteurs</label>
+                    <select class="form-control" id="field_auteurs" name="auteurs" formControlName="auteurs">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="auteursOption.id === editForm.get('auteurs')!.value?.id ? editForm.get('auteurs')!.value : auteursOption" *ngFor="let auteursOption of auteurs; trackBy: trackById">{{ auteursOption.id }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
